@@ -1,0 +1,20 @@
+{
+    "pee" : { "min" : 5, "max": 8},
+    "poo" : { "min" : 2, "max": 5},
+    "formula" : {
+        "times" : { "min": 2, "max": 4},
+        "volume": { "min": 3, "max": 5}
+    },
+    "pumped" : {
+        "times" : { "min": 2, "max": 4},
+        "volume": { "min": 3, "max": 5}
+    },
+    "breastfeed": {
+        "times" : { "min": 4, "max": 6},
+        "duration_seconds": { "min": 300, "max": 600}
+    },
+    "sleep" : {
+        "times" : { "min": 4, "max": 8},
+        "duration_mins": { "min": 60, "max": 240}
+    }
+}
