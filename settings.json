@@ -17,6 +17,6 @@
     },
     "sleep" : {
         "times" : { "min": 4, "max": 8},
-        "duration_secs": { "min": 3600, "max": 15000}
+        "duration_secs": { "min": 3600, "max": 10000}
     }
 }
