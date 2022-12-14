@@ -13,7 +13,7 @@
     "breastfeed": {
         "times" : { "min": 4, "max": 6},
         "duration_secs": { "min": 300, "max": 600},
-        "left_split" : {"min": 0.3, "max": 0.4}
+        "split" : {"min": 0.3, "max": 0.4}
     },
     "sleep" : {
         "times" : { "min": 4, "max": 8},
