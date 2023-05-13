@@ -16,7 +16,7 @@
         "split" : {"min": 0.3, "max": 0.4}
     },
     "sleep" : {
-        "times" : { "min": 5, "max": 7},
-        "duration_secs": { "min": 10200, "max": 10800}
+        "times" : { "min": 1, "max": 2},
+        "duration_secs": { "min": 54000, "max": 61200}
     }
 }
