@@ -1,7 +1,7 @@
 {
     "poopee" : { "min" : 2, "max": 3},
     "pee" : { "min" : 2, "max": 4},
-    "poo" : { "min" : 0, "max": 0},
+    "poo" : { "min" : 0, "max": 1},
     "formula" : {
         "times" : { "min": 3, "max": 4},
         "volume_oz": { "min": 1, "max": 2}
