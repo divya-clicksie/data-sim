@@ -3,7 +3,7 @@
     "pee" : { "min" : 2, "max": 4},
     "poo" : { "min" : 0, "max": 1},
     "formula" : {
-        "times" : { "min": 3, "max": 4},
+        "times" : { "min": 0, "max": 1},
         "volume_oz": { "min": 1, "max": 2}
     },
     "pumped" : {
@@ -16,7 +16,7 @@
         "split" : {"min": 0.3, "max": 0.4}
     },
     "sleep" : {
-        "times" : { "min": 1, "max": 2},
-        "duration_secs": { "min": 54000, "max": 61200}
+        "times" : { "min": 5, "max": 7},
+        "duration_secs": { "min": 3600, "max": 5500}
     }
 }
