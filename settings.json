@@ -1,14 +1,14 @@
 {
     "poopee" : { "min" : 2, "max": 3},
     "pee" : { "min" : 2, "max": 4},
-    "poo" : { "min" : 0, "max": 1},
+    "poo" : { "min" : 0, "max": 2},
     "formula" : {
-        "times" : { "min": 0, "max": 1},
-        "volume_oz": { "min": 1, "max": 2}
+        "times" : { "min": 5, "max": 8},
+        "volume_oz": { "min": 2, "max": 5}
     },
     "pumped" : {
-        "times" : { "min": 1, "max": 2},
-        "volume_oz": { "min": 1, "max": 2}
+        "times" : { "min": 5, "max": 8},
+        "volume_oz": { "min": 2, "max": 4}
     },
     "breastfeed": {
         "times" : { "min": 4, "max": 6},
