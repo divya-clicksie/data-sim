@@ -7,8 +7,8 @@
         "volume_oz": { "min": 2, "max": 5}
     },
     "pumped" : {
-        "times" : { "min": 5, "max": 8},
-        "volume_oz": { "min": 2, "max": 4}
+        "times" : { "min": 0, "max": 1},
+        "volume_oz": { "min": 18, "max": 24}
     },
     "breastfeed": {
         "times" : { "min": 4, "max": 6},
