@@ -3,11 +3,11 @@
     "pee" : { "min" : 2, "max": 4},
     "poo" : { "min" : 0, "max": 2},
     "formula" : {
-        "times" : { "min": 5, "max": 8},
-        "volume_oz": { "min": 2, "max": 5}
+        "times" : { "min": 1, "max": 2},
+        "volume_oz": { "min": 12, "max": 15}
     },
     "pumped" : {
-        "times" : { "min": 0, "max": 1},
+        "times" : { "min": 1, "max": 2},
         "volume_oz": { "min": 18, "max": 24}
     },
     "breastfeed": {
