@@ -1,24 +1,23 @@
 export const free = [
-  'One-tap quick logging',
-  'Private in-app voice logging',
-  'Automatic and smart reminders',
-  'Live Activities (iOS)',
+  'Track feeds, sleep, diapers, medicine, vaccines, allergens, and more',
+  'One-tap in-app quick logging',
   'Unlimited caregivers on the shared baby timeline',
   'Cross-platform caregiver sync for iPhone and Android',
-  'Track feeds, sleep, diapers, medicine, vaccines, allergens, and notes',
+  'Multiple child profiles',
   'WHO growth tracking',
   'Preemie/Fenton growth tracking',
   'CDC Act Early milestone tracking',
   'Robust statistics despite inconsistent logging',
-  'Multiple child profiles',
-  'Robust offline mode when the connection is spotty',
+  'Works offline',
   'Private backup with your own cloud account',
   'Account-free logging',
-  'Dark mode',
+  'Offline in-app voice logging',
   'In-app AI for note-tagging',
   'Child-specific What To Expect guide',
+  'Live Activities (iOS)',
+  'Dark mode',
   'No ads or selling baby data',
-  'No ads, no credit card, and no trial countdown'
+  'Works with Nubo screen-free tracker'
 ];
 
 export const premium = [
@@ -27,6 +26,7 @@ export const premium = [
   'Private pumping and milk collection tracker',
   'Sleep Sounds Mixer',
   'Advanced growth metrics',
+  'Automatic and smart reminders',
   'Export data to CSV',
   'Amazon Alexa integration',
   'Midnight Ember theme',

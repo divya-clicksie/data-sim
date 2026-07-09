@@ -143,14 +143,14 @@ const jsonLd = [
       </div>
     </section>
 
-    <AttentionLine lead="The only app that grows with your baby." />
+    <AttentionLine lead="Baby care changes fast. Nubo keeps up." />
 
     <section class="feature-table-section" aria-labelledby="feature-table-title">
       <div class="container">
         <div class="section-intro">
           <p class="overline">Free app vs Premium</p>
           <h2 id="feature-table-title">See what is included before you download.</h2>
-          <p class="section-sub">Start free, then add Premium only when your routine needs the advanced app tools.</p>
+          <p class="section-sub">Start free, then add Premium only when your routine needs it.</p>
         </div>
         <div class="feature-table-wrap">
           <table class="feature-table">
@@ -173,7 +173,9 @@ const jsonLd = [
                   <th scope="row">{row.feature}</th>
                   <td>
                     {row.free === 'unavailable' ? (
-                      <span class="feature-blank" aria-label={statusLabels.unavailable}></span>
+                      <span class="feature-mark feature-mark-unavailable" aria-label={statusLabels.unavailable}>
+                        <span aria-hidden="true">X</span>
+                      </span>
                     ) : (
                       <span class:list={['feature-mark', row.free === 'readonly' ? 'feature-mark-readonly' : 'feature-mark-included']} aria-label={statusLabels[row.free]}>
                         <span aria-hidden="true">✓</span>
@@ -322,7 +324,7 @@ const jsonLd = [
   .feature-mark { display: inline-grid; width: 1.75rem; height: 1.75rem; place-items: center; border-radius: 999px; font-weight: 900; line-height: 1; }
   .feature-mark-included { background: rgba(61, 179, 173, 0.16); color: var(--color-brand-dark); }
   .feature-mark-readonly { border: 1px solid #d5d5d5; background: #f1f1f1; color: #858585; }
-  .feature-blank { display: inline-block; width: 1.75rem; height: 1.75rem; }
+  .feature-mark-unavailable { border: 1px solid #d5d5d5; background: #f7f7f7; color: #8d8d8d; }
 
   .proof-section { scroll-margin-top: 1rem; }
   .proof-section, .faq-section { background: var(--color-bg-soft); }
@@ -353,7 +355,7 @@ const jsonLd = [
     .feature-table thead th { font-size: 0.7rem; letter-spacing: 0.03em; }
     .feature-table tbody th { width: 58%; min-width: 0; font-size: 0.86rem; line-height: 1.35; }
     .feature-table tbody td { width: 21%; }
-    .feature-mark, .feature-blank { width: 1.45rem; height: 1.45rem; }
+    .feature-mark { width: 1.45rem; height: 1.45rem; }
     .app-faq-grid { grid-template-columns: 1fr; }
     .app-carousel { width: min(100%, 300px); }
     .app-carousel-stage { min-height: 520px; }
