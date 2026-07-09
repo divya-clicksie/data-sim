@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import AttentionLine from '../components/AttentionLine.astro';
 import { free, locked, premium } from '../data/appFeatureComparison';
 
 const title = 'Free Baby Tracker App for iPhone and Android | Nubo';
@@ -125,7 +126,6 @@ const jsonLd = [
             <a href={appStoreURL} target="_blank" rel="noopener noreferrer"><img src="/images/appstore-badge.webp" alt="Download on the App Store" width="160" height="56" /></a>
             <a href={playStoreURL} target="_blank" rel="noopener noreferrer"><img src="/images/playstore-badge.webp" alt="Get it on Google Play" width="160" height="56" /></a>
           </div>
-          <p class="hero-trust">Free on iPhone and Android. No ads. No credit card. No trial countdown.</p>
         </div>
         <div class="app-carousel" data-app-carousel aria-roledescription="carousel" aria-label="Nubo app screenshots">
           <div class="app-carousel-stage">
@@ -147,6 +147,8 @@ const jsonLd = [
         </div>
       </div>
     </section>
+
+    <AttentionLine lead="The only app that grows with your baby." />
 
     <section class="feature-table-section" aria-labelledby="feature-table-title">
       <div class="container">
