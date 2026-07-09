@@ -14,6 +14,8 @@ const appFeatures = [
   'Routine tracking for feeds, sleep, diapers, medicine, growth, vaccines, allergens, milestones, and notes',
   'Quick-log cards for fast app entries',
   'In-app voice catch-up when you need to add several events at once',
+  'Smarter reminders for feeds, bottles, naps, and care events',
+  'Live Activities for active timers on iPhone',
   'Unlimited caregivers on the shared baby timeline',
   'Cross-platform caregiver sync for iPhone and Android',
   'Offline mode when the connection is spotty',
@@ -24,12 +26,10 @@ const appFeatures = [
 
 const premiumFeatures = [
   'Everything in the free app',
-  'Smarter reminders for feeds, bottles, naps, and care events',
   'Sleep Sounds, including calming shush sounds for settling',
   'Care Vault for standing handoff details',
   'CSV exports',
   'Alexa logging',
-  'Live Activities',
   'Private pumping tracker for exclusive pumping and milk output',
   'Advanced views for patterns and totals'
 ];
@@ -41,7 +41,7 @@ const deviceFeatures = [
   'Bluetooth sync with the Nubo app',
   'Works with iPhone and Android caregivers through the app',
   'Refreshed 30-day Premium window for each phone that syncs with the device',
-  'Premium app tools during the active device window: reminders, Sleep Sounds, Care Vault, exports, Alexa, Live Activities, private pumping for exclusive pumping, and advanced views',
+  'Premium app tools during the active device window: Sleep Sounds, Care Vault, exports, Alexa, private pumping for exclusive pumping, and advanced views',
   'Magnetic mount for a crib rail, nightstand, or changing area',
   'Lanyard for keeping the tracker close',
   'Battery included, designed for months of everyday use'
@@ -163,7 +163,7 @@ const jsonLd = {
               <p class="plan-label">Premium</p>
               <h2>Premium</h2>
               <p class="price">$39.99<span>/year</span></p>
-              <p class="tagline">Advanced app tools for families who want reminders, exports, deeper views, cleaner handoffs, and private milk output tracking.</p>
+              <p class="tagline">Advanced app tools for families who want exports, deeper views, cleaner handoffs, and private milk output tracking.</p>
             </div>
             <ul class="feature-list" aria-label="Premium features">
               {premiumFeatures.map((feature) => <li>{feature}</li>)}

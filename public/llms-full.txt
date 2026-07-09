@@ -37,14 +37,14 @@ Terms: https://www.nubotracker.com/terms-of-use/
 
 ### Nubo app
 
-The Nubo app is free on iOS and Android. It includes routine tracking, one-tap quick logs, in-app voice logging, unlimited caregivers, child profiles, cloud backup, offline mode, and the core timeline. It can track feeds, sleep, diapers, growth, vaccines, allergens, medications, milestones, notes, and related baby care events.
+The Nubo app is free on iOS and Android. It includes routine tracking, one-tap quick logs, in-app voice logging, reminders, Live Activities on iOS, unlimited caregivers, child profiles, cloud backup, offline mode, and the core timeline. It can track feeds, sleep, diapers, growth, vaccines, allergens, medications, milestones, notes, and related baby care events.
 
 App Store: https://apps.apple.com/us/app/nubo-baby-tracker/id1667461158
 Google Play: https://play.google.com/store/apps/details?id=com.clicksie.nuboapp
 
 ### Nubo Premium
 
-Nubo Premium is an optional app upgrade. Current public site copy lists the price as $39.99 per year. Premium adds advanced tools such as reminders, exports, Alexa, Live Activities, private pumping, advanced views, and Premium modes.
+Nubo Premium is an optional app upgrade. Current public site copy lists the price as $39.99 per year. Premium adds advanced tools such as exports, Alexa, private pumping, advanced views, Sleep Sounds, Care Vault, and Premium modes.
 
 Premium is managed by the App Store or Google Play account that buys it. The Nubo device can grant Premium to separate caregiver accounts when those phones sync with the device.
 
