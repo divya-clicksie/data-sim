@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import PremiumFollowsDevice from '../components/PremiumFollowsDevice.astro';
 import SpeedComparison from '../components/SpeedComparison.astro';
+import AttentionLine from '../components/AttentionLine.astro';
 
 const title = 'Physical Baby Tracker Device for Night Feeds | Nubo';
 const description = 'A physical baby tracker device for night feeds and screen-free logging. Tap dedicated buttons for bottles, nursing, sleep, and diapers.';
@@ -30,10 +31,6 @@ const faqItems = [
   {
     q: 'Does the device require a Premium subscription?',
     a: 'No. The device works with the free app. Each phone that syncs with the device receives a refreshed 30-day Premium window.'
-  },
-  {
-    q: 'Can I use the app without the device?',
-    a: 'Yes. The free Nubo app works on its own. The device is optional for families who want faster, screen-free logging and simpler caregiver use.'
   }
 ];
 
@@ -84,22 +81,23 @@ const jsonLd = [
 ---
 
 <BaseLayout title={title} description={description} jsonLd={jsonLd}>
-  <Header />
+  <Header ctaHref={amazonURL} ctaLabel="Buy on Amazon" ctaExternal />
   <main>
     <section class="device-hero">
       <div class="container device-hero-grid">
         <div>
-          <p class="overline">Physical baby tracker device</p>
-          <h1>Screen-free baby tracker for feeds, sleep, and diapers.</h1>
-          <p class="hero-sub">Tap dedicated buttons for bottle feeds, nursing, sleep, and diapers without opening your phone. Nubo remembers the exact time, then syncs with the <a href="/app/" class="text-link">free baby tracker app</a>.</p>
-          <div class="hero-actions-inline"><a href={amazonURL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy on Amazon · $89.99</a><a href="/app/" class="btn-ghost">Use the free app first</a></div>
-          <div class="trust-strip" aria-label="Nubo purchase reassurance"><span>No device subscription required</span><span>Works with the free app</span><span>Sold on Amazon</span></div>
+          <p class="overline">Screen-free baby tracker</p>
+          <h1>It doesn't get simpler than this.</h1>
+          <p class="hero-sub">Just tap buttons for bottle feeds, nursing, sleep, and diapers without opening your phone. Data automatically syncs with the app over Bluetooth.</p>
+          <div class="hero-actions-inline"><a href={amazonURL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy on Amazon · $89.99</a></div>
         </div>
         <img src="/images/nubo-instant-tracker-1400.webp" srcset="/images/nubo-instant-tracker-900.webp 900w, /images/nubo-instant-tracker-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 48vw" alt="Hand pressing the Nubo instant tracker beside a sleeping baby" width="1400" height="1400" loading="eager" decoding="async" />
       </div>
     </section>
 
-    <section class="light-switch-section">
+    <AttentionLine lead="Like a light switch for baby care tracking." />
+
+    <!--section class="light-switch-section">
       <div class="container light-switch-inner">
         <div class="light-switch-image">
           <img
@@ -153,9 +151,11 @@ const jsonLd = [
           </a>
         </div>
       </div>
-    </section>
+    </section-->
 
     <SpeedComparison compact />
+
+    <AttentionLine lead="Use it one-handed, half-asleep, in the dark." />
 
     <section class="logs-section" id="device-logs">
       <div class="container">
@@ -169,25 +169,18 @@ const jsonLd = [
       </div>
     </section>
 
-    <section class="fit-section">
-      <div class="container fit-grid">
-        <article><p class="overline">Buy the device if</p><h2>You want a screen-free baby tracker for hands-full moments.</h2><p>Keep the nursery calmer, protect night feeds from screen glare, and let caregivers log without pulling a phone into every bottle, nap, or diaper change.</p><a href={amazonURL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy on Amazon</a></article>
-        <article><p class="overline">Start free if</p><h2>Your phone is usually with you.</h2><p>The free app is a strong first step when your phone is nearby and the caregivers helping most are comfortable logging from an app.</p><a href="/app/#app-downloads" class="btn-ghost">Download free app</a></article>
-      </div>
-    </section>
-
     <section class="competitor-section">
       <div class="container competitor-inner">
         <div>
           <p class="overline">Comparing device trackers?</p>
           <h2>Looking for a Talli alternative?</h2>
-          <p>If you were looking at Talli hardware and still want physical baby tracker buttons, Nubo gives you Bluetooth sync, a free app-first start, and Premium that follows caregiver phones that use the device.</p>
+          <p>If you were looking at Talli hardware and still want physical baby tracker buttons, Nubo gives you Bluetooth sync, simple dedicated buttons, and Premium that follows caregiver phones that use the device.</p>
         </div>
         <a href="/compare/talli/" class="btn-ghost">Compare Nubo as a Talli alternative</a>
       </div>
     </section>
 
-    <section class="mechanics-section">
+    <!--section class="mechanics-section">
       <div class="container mechanics-grid">
         <div>
           <p class="overline">How the device works</p>
@@ -199,18 +192,8 @@ const jsonLd = [
             <li><strong>Review:</strong> The app shows history, charts, exports, reminders, and caregiver notes.</li>
           </ol>
         </div>
-        <div class="spec-card">
-          <h3>Included in the box</h3>
-          <ul>
-            <li>Nubo physical tracker</li>
-            <li>Magnetic mount</li>
-            <li>Lanyard</li>
-            <li>Battery designed for months of everyday use</li>
-            <li>Setup with the free Nubo app</li>
-          </ul>
-        </div>
       </div>
-    </section>
+    </section-->
 
     <PremiumFollowsDevice />
 
@@ -235,7 +218,7 @@ const jsonLd = [
   .device-hero { padding: 8rem 0 5rem; background: var(--color-bg-warm); }
   .device-hero-grid, .mechanics-grid, .gift-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
   .device-hero-grid { align-items: start; }
-  .device-hero-grid > *, .light-switch-inner > *, .mechanics-grid > *, .fit-grid > *, .faq-grid article { min-width: 0; }
+  .device-hero-grid > *, .light-switch-inner > *, .mechanics-grid > *, .faq-grid article { min-width: 0; }
   .device-hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1; letter-spacing: 0; max-width: 760px; overflow-wrap: break-word; }
   .hero-sub { font-size: 1.25rem; line-height: 1.7; color: var(--color-text-secondary); margin: 1.5rem 0 0; max-width: 640px; overflow-wrap: break-word; }
   .hero-actions-inline { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
@@ -259,29 +242,26 @@ const jsonLd = [
   .video-play { position: absolute; inset: 50% auto auto 50%; width: 56px; height: 56px; border-radius: 50%; background: rgba(255, 255, 255, 0.94); transform: translate(-50%, -50%); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16); }
   .video-play::after { content: ""; position: absolute; left: 22px; top: 17px; width: 0; height: 0; border-top: 11px solid transparent; border-bottom: 11px solid transparent; border-left: 16px solid var(--color-brand); }
   .video-label { position: absolute; left: 1rem; right: 1rem; bottom: 1rem; color: #fff; font-size: 0.875rem; font-weight: 700; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45); }
-  .logs-section, .three-speeds-section, .moments-section, .fit-section, .competitor-section, .mechanics-section, .gift-section, .second-baby-section, .faq-band { padding: 6rem 0; }
+  .logs-section, .three-speeds-section, .moments-section, .competitor-section, .mechanics-section, .gift-section, .second-baby-section, .faq-band { padding: 6rem 0; }
   .logs-section, .three-speeds-section, .mechanics-section, .second-baby-section, .faq-band { background: #fff; }
-  .moments-section, .fit-section, .gift-section { background: var(--color-bg-soft); }
+  .moments-section, .gift-section { background: var(--color-bg-soft); }
   .competitor-section { background: var(--color-bg-warm); }
   .philosophy-section { padding: 5rem 0; background: var(--color-bg-warm); }
   .philosophy-inner { max-width: 680px; margin: 0 auto; text-align: center; }
   .philosophy-inner h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); line-height: 1.2; margin: 0.75rem 0 1.25rem; }
   .philosophy-inner p { color: var(--color-text-secondary); line-height: 1.75; margin-bottom: 1.25rem; }
   .philosophy-inner .text-link { font-size: 0.9375rem; font-weight: 600; }
-  .logs-grid, .speed-card-grid, .moment-grid, .fit-grid, .second-baby-grid, .faq-grid { display: grid; gap: 1.5rem; }
+  .logs-grid, .speed-card-grid, .moment-grid, .second-baby-grid, .faq-grid { display: grid; gap: 1.5rem; }
   .logs-grid { grid-template-columns: repeat(4, 1fr); }
   .speed-card-grid { grid-template-columns: repeat(3, 1fr); }
-  .fit-grid { grid-template-columns: repeat(2, 1fr); align-items: stretch; }
   .moment-grid, .faq-grid { grid-template-columns: repeat(2, 1fr); }
   .second-baby-grid { grid-template-columns: repeat(3, 1fr); }
-  .logs-grid article, .speed-card-grid article, .moment-grid article, .fit-grid article, .second-baby-grid article, .spec-card, .faq-grid article { background: #fff; border: 1px solid #e8e8e8; border-radius: var(--radius-xl); padding: 1.75rem; }
+  .logs-grid article, .speed-card-grid article, .moment-grid article, .second-baby-grid article, .spec-card, .faq-grid article { background: #fff; border: 1px solid #e8e8e8; border-radius: var(--radius-xl); padding: 1.75rem; }
   .three-speeds-section .speed-card-grid article { background: var(--color-bg-soft); }
   .speed-card-grid span, .logs-grid span { display: inline-flex; margin-bottom: 1rem; color: var(--color-brand-dark); font-size: 2.5rem; font-weight: 700; line-height: 1; }
   .logs-grid span { font-size: 1.5rem; }
   .speed-card-grid h3, .moment-grid h3, .second-baby-grid h3, .spec-card h3, .faq-grid h3 { font-size: 1.125rem; line-height: 1.25; margin-bottom: 0.75rem; }
-  .logs-grid p, .speed-card-grid p, .moment-grid p, .fit-grid p, .mechanics-grid li, .gift-grid p, .second-baby-inner p, .faq-grid p { color: var(--color-text-secondary); line-height: 1.7; }
-  .fit-grid h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1.15; margin-bottom: 1rem; }
-  .fit-grid .btn-primary, .fit-grid .btn-ghost { margin-top: 1.5rem; }
+  .logs-grid p, .speed-card-grid p, .moment-grid p, .mechanics-grid li, .gift-grid p, .second-baby-inner p, .faq-grid p { color: var(--color-text-secondary); line-height: 1.7; }
   .mechanics-grid h2, .gift-grid h2, .second-baby-inner h2 { font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.12; margin-bottom: 1rem; }
   .second-baby-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 4rem; align-items: start; }
   .mechanics-grid ol, .spec-card ul { display: grid; gap: 0.875rem; padding-left: 1.25rem; }
@@ -290,6 +270,6 @@ const jsonLd = [
   .competitor-inner p { color: var(--color-text-secondary); line-height: 1.7; max-width: 760px; }
   .gift-grid .btn-primary { margin-top: 1.5rem; }
   @media (max-width: 980px) { .device-hero-grid, .light-switch-inner, .mechanics-grid, .gift-grid, .second-baby-inner, .competitor-inner { grid-template-columns: 1fr; gap: 2.5rem; } .device-hero { padding-top: 6rem; } .light-switch-image { display: flex; justify-content: center; order: -1; } .video-grid { grid-template-columns: 1fr; } }
-  @media (max-width: 980px) { .logs-grid { grid-template-columns: repeat(2, 1fr); } .fit-grid { grid-template-columns: 1fr; } }
-  @media (max-width: 760px) { .device-hero h1 { font-size: clamp(2.35rem, 11vw, 3rem); overflow-wrap: anywhere; } .device-hero .overline { font-size: 0.72rem; letter-spacing: 0.04em; overflow-wrap: anywhere; } .hero-sub, .section-intro h2, .section-sub { overflow-wrap: anywhere; } .logs-grid, .speed-card-grid, .moment-grid, .second-baby-grid, .faq-grid { grid-template-columns: 1fr; } .light-switch-section, .logs-section, .three-speeds-section, .moments-section, .fit-section, .competitor-section, .mechanics-section, .gift-section, .second-baby-section, .faq-band { padding: 4rem 0; } }
+  @media (max-width: 980px) { .logs-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 760px) { .device-hero h1 { font-size: clamp(2.35rem, 11vw, 3rem); overflow-wrap: anywhere; } .device-hero .overline { font-size: 0.72rem; letter-spacing: 0.04em; overflow-wrap: anywhere; } .hero-sub, .section-intro h2, .section-sub { overflow-wrap: anywhere; } .logs-grid, .speed-card-grid, .moment-grid, .second-baby-grid, .faq-grid { grid-template-columns: 1fr; } .light-switch-section, .logs-section, .three-speeds-section, .moments-section, .competitor-section, .mechanics-section, .gift-section, .second-baby-section, .faq-band { padding: 4rem 0; } }
 </style>

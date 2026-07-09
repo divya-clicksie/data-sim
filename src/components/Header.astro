@@ -1,3 +1,19 @@
+---
+interface Props {
+  ctaHref?: string;
+  ctaLabel?: string;
+  ctaExternal?: boolean;
+}
+
+const {
+  ctaHref = '/app/#app-downloads',
+  ctaLabel = 'Download free app',
+  ctaExternal = false
+} = Astro.props;
+
+const ctaAttrs = ctaExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+---
+
 <header class="site-header" id="site-header">
   <div class="container header-inner">
     <a href="/" class="logo" aria-label="Nubo Baby Tracker Home">
@@ -12,8 +28,8 @@
       <a href="/resources/">Resources</a>
     </nav>
 
-    <a href="/app/#app-downloads" class="header-cta">
-      Download free app
+    <a href={ctaHref} class="header-cta" {...ctaAttrs}>
+      {ctaLabel}
     </a>
 
     <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
@@ -31,8 +47,8 @@
       <a href="/resources/">Resources</a>
       <a href="/faq/">FAQ</a>
       <a href="/compare/">Compare</a>
-      <a href="/app/#app-downloads" class="mobile-nav-cta">
-        Download free app
+      <a href={ctaHref} class="mobile-nav-cta" {...ctaAttrs}>
+        {ctaLabel}
       </a>
     </nav>
   </div>
