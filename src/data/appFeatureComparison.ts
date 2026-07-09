@@ -22,16 +22,13 @@ export const free = [
 ];
 
 export const premium = [
-  'Export data to CSV',
-  'Amazon Alexa integration',
+  'Care Vault for standing handoff details',
+  'Allergen SafeStart for guided allergen introduction',
   'Private pumping and milk collection tracker',
   'Sleep Sounds Mixer',
   'Advanced growth metrics',
+  'Export data to CSV',
+  'Amazon Alexa integration',
   'Midnight Ember theme',
   'Colorful mode',
-];
-
-export const locked = [
-  'Care Vault for standing handoff details',
-  'Allergen SafeStart for guided allergen introduction',
 ];
