@@ -143,7 +143,7 @@ const jsonLd = [
       </div>
     </section>
 
-    <AttentionLine lead="Baby care changes fast. Nubo keeps up." />
+    <AttentionLine lead="Baby care changes fast. Nubo keeps up." variant="plain" />
 
     <section class="feature-table-section" aria-labelledby="feature-table-title">
       <div class="container">
@@ -287,7 +287,7 @@ const jsonLd = [
 </script>
 
 <style>
-  .app-hero { padding: 10rem 0 5rem; background: linear-gradient(170deg, #f0fafa 0%, #fff 60%); overflow: hidden; }
+  .app-hero { padding: 10rem 0 5rem; background: var(--color-bg-ivory); overflow: hidden; }
   .app-hero-inner { display: grid; grid-template-columns: 1fr 0.75fr; gap: 4rem; align-items: center; }
   .app-hero-inner > div, .section-intro, .app-faq-grid article { min-width: 0; }
   .app-hero h1 { font-size: clamp(2.35rem, 5vw, 4rem); line-height: 1.08; margin-bottom: 1rem; overflow-wrap: break-word; }
@@ -297,6 +297,8 @@ const jsonLd = [
   .hero-trust { margin-top: 1rem; font-weight: 800; color: var(--color-brand-dark) !important; }
   .app-carousel { justify-self: center; width: min(100%, 360px); }
   .app-carousel-stage { position: relative; display: grid; place-items: center; min-height: 620px; }
+  .app-carousel-stage::before { content: ""; position: absolute; inset: 3% 0; z-index: 0; border-radius: 46% 46% 38% 38%; background: var(--color-bg-peach); }
+  .app-slide { position: relative; z-index: 1; }
   .app-slide { margin: 0; text-align: center; }
   .app-slide img { display: block; max-height: 620px; width: auto; max-width: 100%; border-radius: 30px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.14); }
   .app-carousel-controls { display: grid; grid-template-columns: 2.25rem 1fr 2.25rem; align-items: center; gap: 0.75rem; margin-top: 1rem; }
@@ -307,6 +309,8 @@ const jsonLd = [
   .app-carousel-dots { display: flex; align-items: center; justify-content: center; gap: 0.45rem; }
   .app-carousel-dot { width: 0.55rem; height: 0.55rem; border: 0; border-radius: 999px; background: #c9e9ea; cursor: pointer; }
   .app-carousel-dot.is-active { width: 1.4rem; background: var(--color-brand); }
+
+  :global(.app-hero + .attention-line) { padding-top: 0; padding-bottom: 3.5rem; background: var(--color-bg-ivory); }
 
   .feature-table-section, .faq-section, .proof-section { padding: 5rem 0; }
   .feature-table-section { background: #fff; }
