@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const title = 'Pricing | Nubo Free App, Premium, and Device';
-const description = 'Compare Nubo pricing: free baby tracker app, Premium app upgrade for $39.99/year, and the Nubo physical tracker device for $89.99.';
+const description = 'Compare Nubo pricing: free baby tracker app, Premium app upgrade for $39.99/year, and the Nubo physical tracker device for $89, reduced from a $109 retail price.';
 
 const amazonURL = 'https://www.amazon.com/nubo-Newborn-Activity-Tracker-Color/dp/B0CJLNBG4P?maas=maas_adg_465D5CB69C73F660B7AD38831E2D680B_afap_abs&ref_=aa_maas&tag=maas';
 const appStoreURL = 'https://apps.apple.com/us/app/nubo-baby-tracker/id1667461158';
@@ -68,7 +68,7 @@ const jsonLd = {
       offers: {
         '@type': 'Offer',
         name: 'Nubo Device',
-        price: '89.99',
+        price: '89.00',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
@@ -111,7 +111,7 @@ const jsonLd = {
         {
           '@type': 'Offer',
           name: 'Nubo device',
-          price: '89.99',
+          price: '89.00',
           priceCurrency: 'USD',
           url: amazonURL,
           itemOffered: { '@type': 'Product', name: 'Nubo Baby Tracker Device' }
@@ -133,7 +133,7 @@ const jsonLd = {
         <div class="hero-price-row" aria-label="Nubo pricing summary">
           <span>Free app: $0</span>
           <span>Premium: $39.99/year</span>
-          <span>Device: $89.99</span>
+          <span>Device: <del>$109</del> $89</span>
         </div>
       </div>
     </section>
@@ -179,7 +179,7 @@ const jsonLd = {
             <div class="plan-heading">
               <p class="plan-label">Device</p>
               <h2>Nubo Device</h2>
-              <p class="price">$89.99</p>
+              <p class="price price-sale"><del>$109</del><span class="sale-price">$89</span></p>
               <p class="tagline">A one-time Amazon purchase for screen-free logging and caregiver-friendly routines.</p>
             </div>
             <ul class="feature-list" aria-label="Nubo device features">
@@ -322,6 +322,10 @@ const jsonLd = {
     font-size: 1rem;
     font-weight: 700;
   }
+
+  .price-sale { display: flex; align-items: baseline; gap: 0.55rem; }
+  .price-sale del { color: var(--color-text-secondary); font-size: 1.25rem; font-weight: 700; text-decoration-thickness: 1.5px; }
+  .price-sale .sale-price { color: var(--color-text); font-size: inherit; font-weight: inherit; }
 
   .tagline {
     min-height: 5.4rem;

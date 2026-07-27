@@ -54,7 +54,7 @@ const jsonLd = [
     ],
     offers: {
       '@type': 'Offer',
-      price: '89.99',
+      price: '89.00',
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
@@ -85,7 +85,7 @@ const jsonLd = [
           <p class="overline">Screen-free baby tracker</p>
           <h1>It doesn't get simpler than this.</h1>
           <p class="hero-sub">Just tap buttons for bottle feeds, nursing, sleep, and diapers without opening your phone. Data automatically syncs with the app over Bluetooth.</p>
-          <div class="hero-actions-inline"><a href={amazonURL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy on Amazon · $89.99</a></div>
+          <div class="hero-actions-inline"><a href={amazonURL} class="btn-primary" target="_blank" rel="noopener noreferrer">Buy on Amazon · <span class="retail-price">$109</span> $89</a></div>
         </div>
         <img src="/images/nubo-instant-tracker-1400.webp" srcset="/images/nubo-instant-tracker-900.webp 900w, /images/nubo-instant-tracker-1400.webp 1400w" sizes="(max-width: 900px) 92vw, 48vw" alt="Hand pressing the Nubo instant tracker beside a sleeping baby" width="1400" height="1400" loading="eager" decoding="async" />
       </div>
@@ -218,6 +218,7 @@ const jsonLd = [
   .device-hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1; letter-spacing: 0; max-width: 760px; overflow-wrap: break-word; }
   .hero-sub { font-size: 1.25rem; font-weight: 500; line-height: 1.7; color: var(--color-text-secondary); margin: 1.5rem 0 0; max-width: 640px; overflow-wrap: break-word; }
   .hero-actions-inline { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+  .retail-price { display: inline-block; margin-right: 0.35em; opacity: 0.8; text-decoration: line-through; text-decoration-thickness: 1.5px; }
   .device-hero img, .gift-grid img { width: 100%; height: auto; border-radius: var(--radius-xl); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1); }
   :global(.device-hero + .attention-line) { padding-top: 0; padding-bottom: 3.5rem; background: var(--color-bg-ivory); }
   @media (min-width: 981px) { .device-hero-grid > img { margin-top: calc(0.8125rem * 1.6 + 0.75rem); } }

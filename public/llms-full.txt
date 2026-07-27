@@ -50,7 +50,7 @@ Premium is managed by the App Store or Google Play account that buys it. The Nub
 
 ### Nubo device
 
-The Nubo device is a physical baby tracker sold on Amazon. Current public site copy lists the price as $89.99. The device logs feeds, sleep, pee, and poop with a one-second button press. It stores timestamps and syncs to the free app when a caregiver phone is nearby.
+The Nubo device is a physical baby tracker sold on Amazon. Current public site copy lists the price as $89, reduced from a $109 retail price. The device logs feeds, sleep, pee, and poop with a one-second button press. It stores timestamps and syncs to the free app when a caregiver phone is nearby.
 
 The device is useful for night feeds, diaper changes, phone-across-the-room moments, grandparents, nannies, daycare handoffs, and households with multiple caregivers. Phones that sync with the device receive a refreshed 30-day Premium window.
 
@@ -176,7 +176,7 @@ The app page explains the free Nubo app for iOS and Android. It covers one-tap q
 
 ### Pricing page
 
-The pricing page compares the free app, Nubo Premium, and the Nubo device. The free app is $0. Premium is listed at $39.99 per year. The Nubo device is listed at $89.99. The page explains when each setup makes sense and how the device can be a strong value for multi-caregiver households.
+The pricing page compares the free app, Nubo Premium, and the Nubo device. The free app is $0. Premium is listed at $39.99 per year. The Nubo device is listed at $89, reduced from a $109 retail price. The page explains when each setup makes sense and how the device can be a strong value for multi-caregiver households.
 
 ### Compare page
 
