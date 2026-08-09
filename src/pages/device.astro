@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import PremiumFollowsDevice from '../components/PremiumFollowsDevice.astro';
+import PlusFollowsDevice from '../components/PlusFollowsDevice.astro';
 import SpeedComparison from '../components/SpeedComparison.astro';
 import AttentionLine from '../components/AttentionLine.astro';
 
@@ -25,8 +25,8 @@ const faqItems = [
     a: 'The device stores the timestamped event. When a caregiver phone with the Nubo app is nearby again, Bluetooth sync sends the event into the shared baby timeline.'
   },
   {
-    q: 'Does the device require a Premium subscription?',
-    a: 'No. The device works with the free app, and device sync refreshes Premium access for active phones.'
+    q: 'Does the device require a Nubo Plus subscription?',
+    a: 'No. The device works with the free app, and device sync refreshes a 30-day Nubo Plus access window for active phones.'
   }
 ];
 
@@ -49,7 +49,7 @@ const jsonLd = [
       'Dedicated event buttons for bottle feeds, nursing, sleep, and diapers',
       'Screen-free logging during night feeds and hands-full moments',
       'Bluetooth sync with the free Nubo app',
-      'Premium access refresh for phones that sync with the device',
+      'Nubo Plus access refresh for phones that sync with the device',
       'Magnetic mount, lanyard, and battery included'
     ],
     offers: {
@@ -170,7 +170,7 @@ const jsonLd = [
         <div>
           <p class="overline">Comparing device trackers?</p>
           <h2>Looking for a Talli alternative?</h2>
-          <p>If you were looking at Talli hardware and still want physical baby tracker buttons, Nubo gives you Bluetooth sync, simple dedicated buttons, and Premium that follows caregiver phones that use the device.</p>
+          <p>If you were looking at Talli hardware and still want physical baby tracker buttons, Nubo gives you Bluetooth sync, simple dedicated buttons, and a Nubo Plus access window that refreshes when caregiver phones sync with the device.</p>
         </div>
         <a href="/compare/talli/" class="btn-ghost">Compare Nubo as a Talli alternative</a>
       </div>
@@ -191,7 +191,7 @@ const jsonLd = [
       </div>
     </section-->
 
-    <PremiumFollowsDevice />
+    <PlusFollowsDevice />
 
     <section class="faq-band">
       <div class="container">

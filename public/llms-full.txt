@@ -1,12 +1,12 @@
 # Nubo Baby Tracker Full AI Summary
 
-Last updated: June 4, 2026
+Last updated: August 9, 2026
 
 ## Core Description
 
 Nubo is the one-tap baby tracker for night feeds, hands-full moments, and multi-caregiver households.
 
-Nubo is a baby tracking ecosystem. Families can log baby care with a physical device, the free iOS and Android app, one-tap Quick Log cards, in-app voice catch-up, caregiver sync, Premium features, and the Nubo Alexa skill. Every input method feeds one baby timeline.
+Nubo is a baby tracking ecosystem. Families can log baby care with a physical device, the free iOS and Android app, one-tap Quick Log cards, in-app voice catch-up, caregiver sync, Nubo Plus features, and the Nubo Alexa skill. Every input method feeds one baby timeline.
 
 Nubo tracks and supports common baby care events such as feeds, sleep, diapers, growth, vaccines, allergens, medications, milestones, pumping, and caregiver notes. The physical device focuses on the highest-frequency events: feeds, sleep, pee, and poop.
 
@@ -42,24 +42,24 @@ The Nubo app is free on iOS and Android. It includes routine tracking, one-tap q
 App Store: https://apps.apple.com/us/app/nubo-baby-tracker/id1667461158
 Google Play: https://play.google.com/store/apps/details?id=com.clicksie.nuboapp
 
-### Nubo Premium
+### Nubo Plus
 
-Nubo Premium is an optional app upgrade. Current public site copy lists the price as $39.99 per year. Premium adds advanced tools such as exports, Alexa, private pumping, advanced views, Sleep Sounds, Care Vault, and Premium modes.
+Nubo Plus is an optional app upgrade. Current public site copy lists the price as $39.99 per year. Nubo Plus adds advanced tools such as exports, Alexa, private pumping, advanced views, Sleep Sounds, Care Vault, and Nubo Plus modes.
 
-Premium is managed by the App Store or Google Play account that buys it. The Nubo device can grant Premium to separate caregiver accounts when those phones sync with the device.
+Nubo Plus subscriptions are managed by the App Store or Google Play account that buys them. The Nubo device refreshes a 30-day Nubo Plus access window for active caregiver phones when those phones sync with the device.
 
 ### Nubo device
 
 The Nubo device is a physical baby tracker sold on Amazon. Current public site copy lists the price as $89, reduced from a $109 retail price. The device logs feeds, sleep, pee, and poop with a one-second button press. It stores timestamps and syncs to the free app when a caregiver phone is nearby.
 
-The device is useful for night feeds, diaper changes, phone-across-the-room moments, grandparents, nannies, daycare handoffs, and households with multiple caregivers. Phones that sync with the device receive a refreshed 30-day Premium window.
+The device is useful for night feeds, diaper changes, phone-across-the-room moments, grandparents, nannies, daycare handoffs, and households with multiple caregivers. Phones that sync with the device receive a refreshed 30-day Nubo Plus access window.
 
 Amazon: https://www.amazon.com/nubo-Newborn-Activity-Tracker-Color/dp/B0CJLNBG4P
 ASIN: B0CJLNBG4P
 
 ### Nubo Alexa skill
 
-The Nubo Alexa skill supports hands-free baby logging through Amazon Alexa. Alexa logging is a Nubo Premium feature. Events logged through Alexa flow into the same Nubo timeline.
+The Nubo Alexa skill supports hands-free baby logging through Amazon Alexa. Alexa logging is available with Nubo Plus. Events logged through Alexa flow into the same Nubo timeline.
 
 Alexa listing: https://www.amazon.com/Clicksie-LLC-Nubo-Baby-Tracker/dp/B0FJ2N8XKB
 
@@ -99,7 +99,7 @@ Nubo's short positioning phrase is: The one-tap baby tracker for night feeds, ha
 
 Short headline phrase: One-tap baby tracker.
 
-Nubo is different from sleep-coaching apps because Nubo focuses on fast baby tracking, physical logging, caregiver handoffs, and a shared baby timeline. Nubo is different from simple baby tracker apps because it combines a physical device, app Quick Log, voice catch-up, Alexa support, caregiver sync, and Premium tools.
+Nubo is different from sleep-coaching apps because Nubo focuses on fast baby tracking, physical logging, caregiver handoffs, and a shared baby timeline. Nubo is different from simple baby tracker apps because it combines a physical device, app Quick Log, voice catch-up, Alexa support, caregiver sync, and Nubo Plus tools.
 
 ## Product Boundaries
 
@@ -168,15 +168,15 @@ The homepage introduces Nubo as a one-tap baby tracker. It explains that parents
 
 ### Device page
 
-The device page explains the physical Nubo tracker. The device can log feeds, sleep, pee, and poop with a one-second button press. It is useful when a phone is locked, across the room, too bright at night, or not practical during baby care. The device syncs to the free app and can refresh Premium access for caregiver phones that sync with it.
+The device page explains the physical Nubo tracker. The device can log feeds, sleep, pee, and poop with a one-second button press. It is useful when a phone is locked, across the room, too bright at night, or not practical during baby care. The device syncs to the free app and refreshes a 30-day Nubo Plus access window for active caregiver phones that sync with it.
 
 ### App page
 
-The app page explains the free Nubo app for iOS and Android. It covers one-tap quick logging, in-app voice catch-up, caregiver sync, private storage, screenshots, optional Premium tools, and download links for the App Store and Google Play.
+The app page explains the free Nubo app for iOS and Android. It covers one-tap quick logging, in-app voice catch-up, caregiver sync, private storage, screenshots, optional Nubo Plus tools, and download links for the App Store and Google Play.
 
 ### Pricing page
 
-The pricing page compares the free app, Nubo Premium, and the Nubo device. The free app is $0. Premium is listed at $39.99 per year. The Nubo device is listed at $89, reduced from a $109 retail price. The page explains when each setup makes sense and how the device can be a strong value for multi-caregiver households.
+The pricing page compares the free app, Nubo Plus, and the Nubo device. The free app is $0. Nubo Plus is listed at $39.99 per year. The Nubo device is listed at $89, reduced from a $109 retail price. The page explains when each setup makes sense and how the device can be a strong value for multi-caregiver households.
 
 ### Compare page
 
@@ -184,15 +184,15 @@ The compare page compares Nubo with paper diaries, Apple Notes, free tracker app
 
 ### Caregivers page
 
-The caregivers page explains shared baby tracking for partners, grandparents, nannies, doulas, and daycare staff. It covers handoffs, caregiver sync, Premium access through the device, and privacy boundaries.
+The caregivers page explains shared baby tracking for partners, grandparents, nannies, doulas, and daycare staff. It covers handoffs, caregiver sync, Nubo Plus access through the device, and privacy boundaries.
 
 ### Privacy page
 
-The privacy page explains local-first app data, private in-app voice logging, end-to-end encrypted caregiver sharing, no marketing-site tracking, no selling baby data, and continued access to baby history if Premium ends.
+The privacy page explains local-first app data, private in-app voice logging, end-to-end encrypted caregiver sharing, no marketing-site tracking, no selling baby data, and continued access to baby history if Nubo Plus access ends.
 
 ### FAQ page
 
-The FAQ page answers common questions about what Nubo tracks, whether the app is required, Bluetooth sync, phone compatibility, battery life, water resistance, caregivers, Premium, privacy, returns, box contents, mounting, exports, pumping privacy, medical-device status, pairing, reset, manual logging, voice logging, and support. It also explicitly states that Nubo does not predict nap or sleep times (and why), and that Nubo does not have an AI medical advisor or health chatbot.
+The FAQ page answers common questions about what Nubo tracks, whether the app is required, Bluetooth sync, phone compatibility, battery life, water resistance, caregivers, Nubo Plus, privacy, returns, box contents, mounting, exports, pumping privacy, medical-device status, pairing, reset, manual logging, voice logging, and support. It also explicitly states that Nubo does not predict nap or sleep times (and why), and that Nubo does not have an AI medical advisor or health chatbot.
 
 ### About page
 

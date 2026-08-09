@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const title = 'Pricing | Nubo Free App, Premium, and Device';
-const description = 'Compare Nubo pricing: free baby tracker app, Premium app upgrade for $39.99/year, and the Nubo physical tracker device for $89, reduced from a $109 retail price.';
+const title = 'Pricing | Nubo Free App, Plus, and Device';
+const description = 'Compare Nubo pricing: free baby tracker app, Nubo Plus app upgrade for $39.99/year, and the Nubo physical tracker device for $89, reduced from a $109 retail price.';
 
 const amazonURL = 'https://www.amazon.com/nubo-Newborn-Activity-Tracker-Color/dp/B0CJLNBG4P?maas=maas_adg_465D5CB69C73F660B7AD38831E2D680B_afap_abs&ref_=aa_maas&tag=maas';
 const appStoreURL = 'https://apps.apple.com/us/app/nubo-baby-tracker/id1667461158';
@@ -24,7 +24,7 @@ const appFeatures = [
   'No ads, no credit card, and no trial countdown'
 ];
 
-const premiumFeatures = [
+const plusFeatures = [
   'Everything in the free app',
   'Sleep Sounds, including calming shush sounds for settling',
   'Care Vault for standing handoff details',
@@ -40,8 +40,8 @@ const deviceFeatures = [
   'Dedicated buttons for bottle feeds, nursing, sleep, pee, and poop',
   'Bluetooth sync with the Nubo app',
   'Works with iPhone and Android caregivers through the app',
-  'Premium access refresh for active phones that sync with the device',
-  'Premium app tools during the active device window',
+  'Nubo Plus access refresh for active phones that sync with the device',
+  'Nubo Plus app tools during the active device-access window',
   'Magnetic mount for a crib rail, nightstand, or changing area',
   'Lanyard for keeping the tracker close',
   'Battery included, designed for months of everyday use'
@@ -83,7 +83,7 @@ const jsonLd = {
       description: 'Free baby tracker app with quick logs, voice catch-up, caregiver sync, offline mode, and private baby timeline tools.',
       offers: [
         { '@type': 'Offer', name: 'Nubo free app', price: '0', priceCurrency: 'USD', url: appStoreURL },
-        { '@type': 'Offer', name: 'Nubo Premium', price: '39.99', priceCurrency: 'USD', url: appStoreURL }
+        { '@type': 'Offer', name: 'Nubo Plus', price: '39.99', priceCurrency: 'USD', url: appStoreURL }
       ],
       installUrl: [appStoreURL, playStoreURL],
       downloadUrl: [appStoreURL, playStoreURL]
@@ -102,11 +102,11 @@ const jsonLd = {
         },
         {
           '@type': 'Offer',
-          name: 'Premium app upgrade',
+          name: 'Nubo Plus app upgrade',
           price: '39.99',
           priceCurrency: 'USD',
           url: appStoreURL,
-          itemOffered: { '@type': 'SoftwareApplication', name: 'Nubo Premium' }
+          itemOffered: { '@type': 'SoftwareApplication', name: 'Nubo Plus' }
         },
         {
           '@type': 'Offer',
@@ -129,10 +129,10 @@ const jsonLd = {
       <div class="container">
         <p class="overline">Nubo pricing</p>
         <h1>Choose your Nubo plan.</h1>
-        <p class="page-hero-sub">Start with the free app, upgrade to Premium for advanced app tools, or buy the physical tracker device for one-tap logging.</p>
+        <p class="page-hero-sub">Start with the free app, add Nubo Plus for advanced app tools, or buy the physical tracker device for one-tap logging.</p>
         <div class="hero-price-row" aria-label="Nubo pricing summary">
           <span>Free app: $0</span>
-          <span>Premium: $39.99/year</span>
+          <span>Nubo Plus: $39.99/year</span>
           <span>Device: <del>$109</del> $89</span>
         </div>
       </div>
@@ -160,13 +160,13 @@ const jsonLd = {
           <article class="pricing-card pricing-card-featured">
             <div class="plan-badge">App upgrade</div>
             <div class="plan-heading">
-              <p class="plan-label">Premium</p>
-              <h2>Premium</h2>
+              <p class="plan-label">Nubo Plus</p>
+              <h2>Nubo Plus</h2>
               <p class="price">$39.99<span>/year</span></p>
               <p class="tagline">Advanced app tools for families who want exports, deeper views, cleaner handoffs, and private milk output tracking.</p>
             </div>
-            <ul class="feature-list" aria-label="Premium features">
-              {premiumFeatures.map((feature) => <li>{feature}</li>)}
+            <ul class="feature-list" aria-label="Nubo Plus features">
+              {plusFeatures.map((feature) => <li>{feature}</li>)}
             </ul>
             <div class="card-actions">
               <a href={appStoreURL} class="btn-primary" target="_blank" rel="noopener noreferrer">Upgrade in the iPhone app</a>
@@ -191,7 +191,7 @@ const jsonLd = {
           </article>
         </div>
 
-        <p class="pricing-note">Premium prices are handled by the App Store or Google Play. Device price, shipping, availability, and returns follow the current Amazon listing.</p>
+        <p class="pricing-note">Nubo Plus prices are handled by the App Store or Google Play. Device price, shipping, availability, and returns follow the current Amazon listing.</p>
       </div>
     </section>
   </main>
@@ -266,6 +266,7 @@ const jsonLd = {
     border: 2px solid #1d1d1f;
     box-shadow: 0 18px 44px rgba(31, 41, 55, 0.11);
   }
+
 
   .plan-badge {
     position: absolute;

@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import AttentionLine from '../components/AttentionLine.astro';
-import { free, premium } from '../data/appFeatureComparison';
+import { free, plus } from '../data/appFeatureComparison';
 
 const title = 'Free Baby Tracker App for iPhone and Android | Nubo';
 const description = 'Download the free Nubo baby tracker app for iPhone and Android. Log feeds, sleep, diapers, voice catch-up, and caregiver sync with no ads.';
@@ -26,25 +26,25 @@ const featureRows = [
   ...free.map((feature) => ({
     feature,
     free: 'included',
-    premium: 'included'
+    plus: 'included'
   })),
-  ...premium.map((feature) => ({
+  ...plus.map((feature) => ({
     feature,
     free: 'unavailable',
-    premium: 'included'
+    plus: 'included'
   }))
 ];
 
 const statusLabels = {
   included: 'Included',
-  readonly: 'Read only without Premium',
+  readonly: 'Read only without Nubo Plus',
   unavailable: 'Not available'
 };
 
 const faqItems = [
   {
     q: 'Is Nubo really a free baby tracker app?',
-    a: 'Yes. The free Nubo app covers everyday baby tracking for feeds, sleep, diapers, medicine, growth, notes, voice catch-up, caregiver sync, offline mode, and private storage. Premium and the Nubo device are optional upgrades.'
+    a: 'Yes. The free Nubo app covers everyday baby tracking for feeds, sleep, diapers, medicine, growth, notes, voice catch-up, caregiver sync, offline mode, and private storage. Nubo Plus and the Nubo device are optional upgrades.'
   },
   {
     q: 'Does Nubo work on iPhone and Android?',
@@ -56,7 +56,7 @@ const faqItems = [
   },
   {
     q: 'Can I use Nubo for exclusive pumping?',
-    a: 'Yes. Log pumped milk bottles as baby feeds in the shared timeline, and use Premium private pumping to track milk output separately. Caregivers can see baby intake, not your private pumping logs.'
+    a: 'Yes. Log pumped milk bottles as baby feeds in the shared timeline, and use Nubo Plus private pumping to track milk output separately. Caregivers can see baby intake, not your private pumping logs.'
   }
 ];
 
@@ -80,7 +80,7 @@ const jsonLd = [
     ],
     offers: [
       { '@type': 'Offer', name: 'Nubo free app', price: '0', priceCurrency: 'USD', url: appStoreURL },
-      { '@type': 'Offer', name: 'Nubo Premium', price: '39.99', priceCurrency: 'USD', url: appStoreURL }
+      { '@type': 'Offer', name: 'Nubo Plus', price: '39.99', priceCurrency: 'USD', url: appStoreURL }
     ],
     installUrl: [appStoreURL, playStoreURL],
     downloadUrl: [appStoreURL, playStoreURL]
@@ -140,13 +140,13 @@ const jsonLd = [
     <section class="feature-table-section" aria-labelledby="feature-table-title">
       <div class="container">
         <div class="section-intro">
-          <p class="overline">Free app vs Premium</p>
+          <p class="overline">Free app vs Nubo Plus</p>
           <h2 id="feature-table-title">See what is included before you download.</h2>
-          <p class="section-sub">Start free, then add Premium only when your routine needs it.</p>
+          <p class="section-sub">Start free, then add Nubo Plus only when your routine needs it.</p>
         </div>
         <div class="feature-table-wrap">
           <table class="feature-table">
-            <caption>Free app and Premium feature availability</caption>
+            <caption>Free app and Nubo Plus feature availability</caption>
             <colgroup>
               <col class="feature-name-col" />
               <col class="feature-status-col" />
@@ -156,7 +156,7 @@ const jsonLd = [
               <tr>
                 <th scope="col">Feature name</th>
                 <th scope="col">Free app</th>
-                <th scope="col">Premium</th>
+                <th scope="col">Nubo Plus</th>
               </tr>
             </thead>
             <tbody>
@@ -175,7 +175,7 @@ const jsonLd = [
                     )}
                   </td>
                   <td>
-                    <span class="feature-mark feature-mark-included" aria-label={statusLabels[row.premium]}>
+                    <span class="feature-mark feature-mark-included" aria-label={statusLabels[row.plus]}>
                       <span aria-hidden="true">✓</span>
                     </span>
                   </td>

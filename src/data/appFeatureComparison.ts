@@ -20,7 +20,7 @@ export const free = [
   'Works with Nubo screen-free tracker'
 ];
 
-export const premium = [
+export const plus = [
   'Care Vault for standing handoff details',
   'Allergen SafeStart for guided allergen introduction',
   'Private pumping and milk collection tracker',
